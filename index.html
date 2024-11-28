@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Suno Music - Música Vintage e Aesthetic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+
+    <header>
+        
+        <div class="logo">
+            <img src="sunowave (1).png" alt="logo" width="500">
+            <h1> </h1> <br>
+            <h2></h2>
+            <p class="slogan">Suno Wave</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="music-player">
+            <h2>Reproduza Nossas Playlists</h2>
+
+            <!-- Audio Controls -->
+            <audio id="audioPlayer" controls>
+                <source src="musica1.mp3" type="audio/mp3">
+            </audio>
+
+            <!-- Music List -->
+            <div class="music-list">
+                <h3>Descubra Novas Músicas</h3>
+                <div class="music-card">
+                    <img src="disco.png" alt="Música 1">
+                    <div class="music-info">
+                        <p>Lana Del Rey: Young & Beatiful</p>
+                        <button onclick="playMusic('lana.mp3')">Reproduzir</button>
+                    </div>
+                </div>
+                <div class="music-card">
+                    <img src="disco.png" alt="Música 2">
+                    <div class="music-info">
+                        <p>Lana Del Rey: Born To Die</p>
+                        <button onclick="playMusic('lana2.mp3')">Reproduzir</button>
+                    </div>
+                    
+                </div>
+                
+                <div class="music-card">
+                    <img src="disco.png" alt="Música 3">
+                    <div class="music-info">
+                        <p>Lana Del Rey: Blue Jeans</p>
+                        <button onclick="playMusic('musica3.mp3')">Reproduzir</button>
+                    </div>
+                </div>
+
+                <div class="music-card">
+                    <img src="disco.png" alt="Música 2">
+                    <div class="music-info">
+                        <p>Lana Del Rey: Salvatore</p>
+                        <button onclick="playMusic('lana2.mp3')">Reproduzir</button>
+                    </div>
+                    </div>
+
+                    <div class="music-card">
+                        <img src="disco.png" alt="Música 2">
+                        <div class="music-info">
+                            <p>Lana Del Rey: The Other Woman</p>
+                            <button onclick="playMusic('lana2.mp3')">Reproduzir</button>
+                        </div>
+                        </div>
+
+                        <div class="music-card">
+                            <img src="disco.png" alt="Música 2">
+                            <div class="music-info">
+                                <p>Lana Del Rey: Bartender</p>
+                                <button onclick="playMusic('lana2.mp3')">Reproduzir</button>
+                            </div>
+                            </div>
+                    
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Suno Wave | Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Função para trocar a música
+        function playMusic(musica) {
+            const player = document.getElementById('audioPlayer');
+            player.src = musica;
+            player.play();
+        }
+    </script>
+
+</body>
+</html>
